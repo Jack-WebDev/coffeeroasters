@@ -1,0 +1,38 @@
+
+.whyUs {
+    margin-block-start: 5rem; //Remove & add gap in main
+    margin-inline: 1rem;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--clr-secondary);
+    color: #fff;
+    max-height: 140vh;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+
+    .cards {
+        display: grid;
+        gap: 2rem;
+    }
+
+    .bestquality, .exclusivebenefits, .freeshipping {
+        display: grid;
+        gap: 1.5rem;
+        justify-items: center;
+        background-color: var(--clr-primary);
+        padding-inline: 1.5rem;
+        padding-block: 2rem;
+        border-radius: 10px;
+
+        img {
+            padding-block-start: 3rem;
+        }
+    }
+
+    .bestquality {
+        margin-block-start: 1.5rem;
+    }
+}
+

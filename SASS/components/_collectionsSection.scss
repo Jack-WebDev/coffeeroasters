@@ -1,0 +1,28 @@
+
+.collectionsSection {
+  margin-inline: 1rem;
+  margin-block-start: 5rem; // Remove this & use gap on main
+  display: grid;
+  justify-items: center;
+  gap: 5rem;
+
+  h2 {
+    color: #83888f;
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+  }
+
+  .grandEspresso,
+  .planalto,
+  .piccollo,
+  .danche {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .grandEspresso {
+    box-shadow: 0px -100px 100px 10px #fff;
+  }
+}

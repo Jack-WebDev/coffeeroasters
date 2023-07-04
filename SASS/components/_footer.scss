@@ -1,0 +1,35 @@
+footer {
+  padding-block: 2rem;
+  background-color: var(--clr-secondary);
+  transform: translateY(45rem);
+
+  nav {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+
+    .footer__nav {
+      display: grid;
+      justify-items: center;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    .nav__link {
+      color: var(--clr-navLinks);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .nav__link:hover {
+      text-decoration: 2px solid underline var(--clr-primary);
+    }
+
+    .social__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+}

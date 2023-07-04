@@ -1,82 +1,74 @@
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 1rem;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  position: relative;
 
-    .logo {
-        width: 50%;
+  .logo {
+    width: 50%;
+  }
+
+  .hamburger__menu {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+
+    .hamburger {
+      position: absolute;
     }
 
-    .hamburger__menu {
-        position: absolute;
-        right: 5%;
-        cursor: pointer;
+    .close__menu {
+      opacity: 0;
+    }
+  }
 
-        .hamburger {
-            position: absolute;
-        }
+  nav {
+    padding-block: 2rem;
 
-        .close__menu {
-            opacity: 0;
-        }
+    .nav__menu {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #fff;
+      width: 90%;
+      position: absolute;
+      left: 5%;
+      top: 0;
+      padding-block: 1rem;
+      transform: translateY(-150%);
+      transition: transform 300ms ease-in-out;
+      box-shadow: 10px 1px 50px 70px #fff;
     }
 
-    nav {
-        padding-block: 2rem;
-
-        .nav__menu {
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            background-color: #fff;
-            width: 90%;
-            position: absolute;
-            left: 5%;
-            top: 0;
-            padding-block: 1rem;
-            transform: translateY(-150%);
-            transition: transform 300ms ease-in-out;
-            box-shadow: 10px 1px 50px 50px #fff;
-
-
-        }
-
-        .nav__item {
-            text-align: center;
-            list-style: none;
-        }
-
-        .nav__link {
-            color: #000;
-            font-weight: 800;
-            text-decoration: none;
-        }
-
-        .nav__link:hover {
-            text-decoration: 2px solid underline green;
-        }
-
-
+    .nav__item {
+      text-align: center;
+      list-style: none;
     }
 
+    .nav__link {
+      color: var(--clr-navLinks);
+      font-weight: 800;
+      text-decoration: none;
+    }
 
+    .nav__link:hover {
+      text-decoration: 2px solid underline var(--clr-primary);
+    }
+  }
 }
 
-
-
 header nav .nav__menu.active {
-    transform: translateY(70%);
+  transform: translateY(70%);
 }
 
 header .hamburger__menu .close__menu.active {
-    opacity: 1;
-    z-index: 999;
+  opacity: 1;
+  z-index: 999;
 }
 
 header .hamburger__menu > .hamburger.active {
-    opacity: 0;
+  opacity: 0;
 }

@@ -1,0 +1,50 @@
+
+
+.howItWorks {
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+    transform: translateY(40rem);
+    padding-inline: 1.5rem;
+
+    .planCreationProcess {
+        display: grid;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .pickCoffee, .chooseFreq, .receiveCoffee {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+
+        span {
+            font-size: 3rem;
+            font-family: var(--ff-france);
+            color: var(--clr-numbers);
+        }
+
+        h3 {
+            font-family: var(--ff-france);
+        }
+
+    }
+    
+    .create-plan__btn {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: var(--clr-primary);
+        font-weight: 600;
+        cursor: pointer;
+        transition: 300ms ease-in;
+
+    }
+
+    .create-plan__btn:hover {
+        background-color: var( --clr-light-cyan);
+        color: var(--clr-dark-grey-blue);
+      }
+}
+
