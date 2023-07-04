@@ -1,6 +1,6 @@
 footer {
   padding-block: 2rem;
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-grey-900);
   transform: translateY(45rem);
 
   nav {
@@ -16,13 +16,13 @@ footer {
     }
 
     .nav__link {
-      color: var(--clr-navLinks);
+      color: var(--clr-grey-400);
       font-weight: 800;
       text-decoration: none;
     }
 
     .nav__link:hover {
-      text-decoration: 2px solid underline var(--clr-primary);
+      text-decoration: 2px solid underline var(--clr-cyan-900);
     }
 
     .social__links {

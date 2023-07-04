@@ -17,11 +17,11 @@
 
   h1 {
     font-size: 2.2rem;
-    font-family: "Fraunces", serif;
+    font-family: var(--ff-frances);
   }
 
   p {
-    font-family: "Barlow", serif;
+    font-family: var(--ff-barlow);
   }
 
   .create-plan__btn {
@@ -29,14 +29,14 @@
     border: none;
     border-radius: 5px;
     color: #fff;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-cyan-900);
     font-weight: 600;
     cursor: pointer;
     transition: 300ms ease-in;
   }
 
   .create-plan__btn:hover {
-    background-color: var( --clr-light-cyan);
-    color: var(--clr-dark-grey-blue);
+    background-color: var( --clr-cyan-100);
+    color: var(--clr-grey-900);
   }
 }
