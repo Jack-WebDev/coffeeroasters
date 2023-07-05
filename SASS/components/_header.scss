@@ -3,11 +3,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 1rem;
+  padding-inline: 2rem;
   position: relative;
+
+
 
   .logo {
     width: 50%;
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
   }
 
   .hamburger__menu {
@@ -22,10 +28,16 @@ header {
     .close__menu {
       opacity: 0;
     }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   nav {
     padding-block: 2rem;
+
+
 
     .nav__menu {
       display: grid;
@@ -41,6 +53,16 @@ header {
       transform: translateY(-150%);
       transition: transform 300ms ease-in-out;
       box-shadow: 10px 1px 50px 70px #fff;
+
+      @media screen and (min-width:768px) {
+        display: flex;
+        width: auto;
+        position: unset;
+        padding: unset;
+        background-color: unset;
+        transform: translateY(5px);
+        box-shadow: none;
+      }
     }
 
     .nav__item {
@@ -72,3 +94,5 @@ header .hamburger__menu .close__menu.active {
 header .hamburger__menu > .hamburger.active {
   opacity: 0;
 }
+
+

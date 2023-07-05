@@ -9,7 +9,6 @@
   background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
   padding-block: 2rem;
   padding-inline: 13px;
   margin-inline: 1rem;
@@ -17,11 +16,15 @@
 
   h1 {
     font-size: 2.2rem;
-    font-family: var(--ff-frances);
+    font-family: var(--ff-france);
   }
 
   p {
     font-family: var(--ff-barlow);
+
+    @media screen and (min-width: 768px) {
+      width: 50ch;
+    }
   }
 
   .create-plan__btn {
@@ -30,13 +33,38 @@
     border-radius: 5px;
     color: #fff;
     background-color: var(--clr-cyan-900);
+    font-family: var(--ff-france);
     font-weight: 600;
     cursor: pointer;
     transition: 300ms ease-in;
+
+    @media screen and (min-width: 768px) {
+      
+    }
   }
 
   .create-plan__btn:hover {
     background-color: var( --clr-cyan-100);
     color: var(--clr-grey-900);
+  }
+
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    gap: 1.5rem;
+    color: #fff;
+    background-image: url(/assets/home/tablet/image-hero-coffeepress.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-block: unset;
+    padding-inline: 2rem;
+    margin-inline: 1rem;
+    border-radius: 10px;
+    height: 80vh;
+  
   }
 }
