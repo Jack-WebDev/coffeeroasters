@@ -15,6 +15,11 @@
     .cards {
         display: grid;
         gap: 2rem;
+
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: repeat(3,1fr);
+            transform: translateY(100px);
+        }
     }
 
     @media screen and (min-width: 768px) {
@@ -29,6 +34,8 @@
             width: 60ch;
         }
     }
+
+
 
     .bestquality, .exclusivebenefits, .freeshipping {
         display: grid;
@@ -62,10 +69,20 @@
                 }
             }
         }
+
+
+        @media screen and (min-width:1024px) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     .bestquality {
         margin-block-start: 1.5rem;
+
+        @media screen and (min-width:1024px) {
+            margin: auto;
+        }
     }
 }
 
