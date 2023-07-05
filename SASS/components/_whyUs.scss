@@ -17,6 +17,19 @@
         gap: 2rem;
     }
 
+    @media screen and (min-width: 768px) {
+        max-height: 90vh;
+
+        h2 {
+            font-size: 3rem;
+            font-family: var(--ff-france);
+        }
+
+        p {
+            width: 60ch;
+        }
+    }
+
     .bestquality, .exclusivebenefits, .freeshipping {
         display: grid;
         gap: 1.5rem;
@@ -28,6 +41,26 @@
 
         img {
             padding-block-start: 3rem;
+        }
+
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 5rem;
+            text-align: start;
+
+            img {
+                padding: unset;
+            }
+
+            .bestquality__content, .exclusivebenefits__content, .freeshipping__content {
+                
+                p {
+                    width: 40ch;
+                }
+            }
         }
     }
 
