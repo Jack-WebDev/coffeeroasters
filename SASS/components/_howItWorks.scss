@@ -11,6 +11,17 @@
         display: grid;
         gap: 3rem;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: flex-start;
+            text-align: start;
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
+        justify-items: start;
     }
 
     .pickCoffee, .chooseFreq, .receiveCoffee {
@@ -26,6 +37,18 @@
 
         h3 {
             font-family: var(--ff-france);
+        }
+
+
+        @media screen and (min-width:768px) {
+            justify-items: start;
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-family: var(--ff-barlow);
+                font-weight: 600;
+            }
         }
 
     }
