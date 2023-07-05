@@ -3,21 +3,32 @@ footer {
   background-color: var(--clr-grey-900);
   transform: translateY(45rem);
 
+  @media screen and (min-width: 768px) {
+    transform: translateY(30rem);
+    width: max(100% - 3rem);
+    margin: auto;
+  }
+
   nav {
     display: grid;
     justify-items: center;
     gap: 2rem;
+
 
     .footer__nav {
       display: grid;
       justify-items: center;
       gap: 1rem;
       list-style: none;
+
+      @media screen and (min-width:768px) {
+        display: flex;
+      }
     }
 
     .nav__link {
       color: var(--clr-grey-400);
-      font-weight: 800;
+      font-family: var(--ff-barlow);
       text-decoration: none;
     }
 
