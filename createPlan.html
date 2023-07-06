@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="CSS/createPlan.css">
+    <script defer src="JS/header.js"></script>
     <title>Create Plan</title>
 </head>
 <body>
+    <header>
+        <img class="logo" src="./assets/shared/desktop/logo.svg" alt="">
+
+        <div class="hamburger__menu" id="hamburgerMenu">
+            <img class="hamburger" id="hamburger" src="./assets/shared/mobile/icon-hamburger.svg" alt="">
+            <img src="./assets/shared/mobile/icon-close.svg" alt="" id="closeMenu" class="close__menu">
+        </div>
+        
+        <nav>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="./index.html" class="nav__link" target="_blank">Home</a></li>
+                <li class="nav__item"><a href="./about.html" class="nav__link" target="_blank">About Us</a></li>
+                <li class="nav__item"><a href="./createPlan.html" class="nav__link" target="_blank">Create Your Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="heroSection">
+            <h1>Create a plan</h1>
+
+            <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
+
+            <button class="create-plan__btn">Create your plan</button>
+        </section>
+
+        <section class="howItWorks">
+            <div class="planCreationProcess">
+                <div class="pickCoffee">
+                    <span class="number">01</span>
+                    <h3>Pick your coffee</h3>
+                    <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+                </div>
+    
+                <div class="chooseFreq">
+                    <span class="number">02</span>
+                    <h3>Choose the frequency</h3>
+                    <p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+                </div>
+    
+                <div class="receiveCoffee">
+                    <span class="number">03</span>
+                    <h3>Receive and enjoy!</h3>
+                    <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+                </div>
+            </div>
+
+            <button class="create-plan__btn">Create your plan</button>
+        </section>
+    </main>
     
 </body>
 </html>
