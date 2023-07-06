@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Fraunces:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/createPlan.css">
     <script defer src="JS/header.js"></script>
     <title>Create Plan</title>
@@ -56,6 +59,165 @@
             </div>
 
             <button class="create-plan__btn">Create your plan</button>
+        </section>
+
+        <section class="create__plan">
+            <div class="order__navigation">
+                <div class="nav__item active">
+                    <span class="number">01</span>
+                    <h2>Preferences</h2>
+                </div>
+
+                <div class="nav__item">
+                    <span class="number">02</span>
+                    <h2>Bean Type</h2>
+                </div>
+
+                <div class="nav__item">
+                    <span class="number">03</span>
+                    <h2>Quantity</h2>
+                </div>
+
+                <div class="nav__item">
+                    <span class="number">04</span>
+                    <h2>Grind Option</h2>
+                </div>
+
+                <div class="nav__item">
+                    <span class="number">05</span>
+                    <h2>Deliveries</h2>
+                </div>
+
+
+
+            </div>
+
+            <div class="order__creation-container">
+
+                <div class="order__accordion-container">
+                    <div class="accordion__control">
+                        <h3>How do you drink your coffee?</h3>
+
+                        <div class="accordion__content">
+                            <div class="coffee__option">
+                                <h4>Capsule</h4>
+                                <p>Compatible with Nspresso systems and similar brewers.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Filter</h4>
+                                <p>For pour over or drip methods like Aeropress, Chemex, and V60.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Espresso</h4>
+                                <p>Dense and Finely ground beans for an intense, flavorful experience.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion__control">
+                        <h3>What type of coffee?</h3>
+
+                        <div class="accordion__content">
+                            <div class="coffee__option">
+                                <h4>Single Origin</h4>
+                                <p>Distinct, high quality coffee from a specific family-owned farm.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Decaf</h4>
+                                <p>Just like regular coffee, except the caffeine has been removed.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Blended</h4>
+                                <p>Combination of two or three dark roasted beans of organic coffees.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion__control">
+                        <h3>How much would you like?</h3>
+
+                        <div class="accordion__content">
+                            <div class="coffee__option">
+                                <h4>250g</h4>
+                                <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>500g</h4>
+                                <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>1000g</h4>
+                                <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion__control">
+                        <h3>Want us to grind them?</h3>
+
+                        <div class="accordion__content">
+                            <div class="coffee__option">
+                                <h4>Wholebean</h4>
+                                <p>Best choice if you cherish the full sensory experience.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Filter</h4>
+                                <p>For drip or pour-over coffee methods such as V60 or Aeropress.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Cafetiere</h4>
+                                <p>Course ground beans specially suited for french press coffee</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion__control">
+                        <h3>How often should we deliver</h3>
+
+                        <div class="accordion__content">
+                            <div class="coffee__option">
+                                <h4>Every week</h4>
+                                <p>$7.20 per shipment. Includes free first-class shipping.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Every 2 weeks</h4>
+                                <p>>$9.60 per shipment. Includes free priority shipping.</p>
+                            </div>
+
+                            <div class="coffee__option">
+                                <h4>Every month</h4>
+                                <p>$12.00 per shipment. Includes free priority shipping.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order__summary">
+                    <h5>ORDER SUMMARY</h5>
+
+                    <p>
+                        "I drink my coffee as <span id="option1">___</span>, with a <span id="option2">___</span> type of bean. <span id="option3">___</span> ground ala <span id="option4">___</span>, sent to me <span id="option5">___</span>."
+                    </p>
+                </div>
+
+                <button class="createPlan">Create my plan!</button>
+        </div>
+
+
         </section>
     </main>
     
