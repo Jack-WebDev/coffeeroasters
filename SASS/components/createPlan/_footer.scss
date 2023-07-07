@@ -1,0 +1,37 @@
+
+footer {
+    background-color: var(--clr-grey-900);
+    transform: translateY(20rem);
+
+
+    nav {
+        display: grid;
+        justify-items: center;
+        padding-block: 3rem;
+        gap: 3rem;
+    }
+
+    .footer__nav {
+        display: grid;
+        justify-items: center;
+        gap: 2rem;
+        list-style: none;
+
+        .nav__link {
+            color: var(--clr-grey-400);
+            text-decoration: none;
+        }
+
+        .nav__link:hover {
+            text-decoration: 2px solid underline var(--clr-cyan-900);
+          }
+    }
+
+    .social__links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+
