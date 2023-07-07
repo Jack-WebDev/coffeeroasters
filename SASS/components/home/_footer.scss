@@ -5,8 +5,13 @@ footer {
 
   @media screen and (min-width: 768px) {
     transform: translateY(30rem);
-    width: max(100% - 3rem);
+    width: max(100% - 6rem);
     margin: auto;
+
+  }
+
+  @media screen and (min-width:1024px) {
+    padding-block: 2rem;
   }
 
   nav {
@@ -31,12 +36,23 @@ footer {
     }
 
     .nav__link {
-      color: var(--clr-grey-400);
+      color: rgba(#fff, .7);
       font-family: var(--ff-barlow);
       text-decoration: none;
+
+
+      @media screen and (min-width: 1024px) {
+        font-size: 20px;
+      }
+
+      @media screen and (min-width:1440px) {
+        font-size: 25px;
+      }
     }
 
     .nav__link:hover {
+      color: #fff;
+      font-weight: 600;
       text-decoration: 2px solid underline var(--clr-cyan-900);
     }
 
