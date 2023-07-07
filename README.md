@@ -1,4 +1,4 @@
-# Frontend Mentor - Coffeeroasters subscription site solution
+# Coffeeroasters
 
 ## Table of contents
 
