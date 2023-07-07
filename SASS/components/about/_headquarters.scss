@@ -1,0 +1,34 @@
+
+.headquarters {
+    display: grid;
+    gap: 3rem;
+    width: max(100% - 2rem);
+    margin-inline: auto;
+    transform: translateY(15rem);
+
+
+    .UK {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .Canada {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+    }    
+    
+    .AUS {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+    }
+
+
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
