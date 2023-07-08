@@ -99,7 +99,7 @@
                     <div class="accordion__control">
                         <h3>How do you drink your coffee?</h3>
 
-                        <div class="accordion__content">
+                        <div class="accordion__content" id="content1">
                             <div class="coffee__option">
                                 <h4>Capsule</h4>
                                 <p>Compatible with Espresso systems and similar brewers.</p>
@@ -121,7 +121,7 @@
                     <div class="accordion__control">
                         <h3>What type of coffee?</h3>
 
-                        <div class="accordion__content">
+                        <div class="accordion__content" id="content2">
                             <div class="coffee__option">
                                 <h4>Single Origin</h4>
                                 <p>Distinct, high quality coffee from a specific family-owned farm.</p>
@@ -143,7 +143,7 @@
                     <div class="accordion__control">
                         <h3>How much would you like?</h3>
 
-                        <div class="accordion__content">
+                        <div class="accordion__content" id="content3">
                             <div class="coffee__option">
                                 <h4>250g</h4>
                                 <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
@@ -165,7 +165,7 @@
                     <div class="accordion__control">
                         <h3>Want us to grind them?</h3>
 
-                        <div class="accordion__content" id="content1">
+                        <div class="accordion__content" id="content4">
                             <div class="coffee__option">
                                 <h4>Wholebean</h4>
                                 <p>Best choice if you cherish the full sensory experience.</p>
@@ -187,7 +187,7 @@
                     <div class="accordion__control">
                         <h3>How often should we deliver</h3>
 
-                        <div class="accordion__content" id="content2">
+                        <div class="accordion__content" id="content5">
                             <div class="coffee__option">
                                 <h4>Every week</h4>
                                 <p>$7.20 per shipment. Includes free first-class shipping.</p>
@@ -211,11 +211,23 @@
                     <h5>ORDER SUMMARY</h5>
 
                     <p>
-                        "I drink my coffee as <span id="option1">___</span>, with a <span id="option2">___</span> type of bean. <span id="option3">___</span> ground ala <span id="option4">___</span>, sent to me <span id="option5">___</span>."
+                        "I drink my coffee <span id="option1">___</span>, with a <span id="option2">___</span> type of bean. <span id="option3">___</span> ground ala <span id="option4">___</span>, sent to me <span id="option5">___</span>."
                     </p>
                 </div>
 
-                <button class="create-plan__btn">Create my plan!</button>
+                <div class="order__summary" id="order">
+                    <h5>ORDER SUMMARY</h5>
+
+                    <p>
+                        "I drink my coffee as <span id="option1">___</span>, with a <span id="option2">___</span> type of bean. <span id="option3">___</span> ground ala <span id="option4">___</span>, sent to me <span id="option5">___</span>."
+                    </p>
+
+                    <div class="total__payment">
+                        <span>R300</span>
+                    </div>
+                </div>
+                <button disabled id="disabled">Create Plan</button>
+                <button class="create-plan__btn" >Create my plan!</button>
         </div>
 
 
