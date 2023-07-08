@@ -146,6 +146,10 @@
       .accordion__control {
         justify-items: start;
         text-align: start;
+
+        h3 {
+          cursor: pointer;
+        }
       }
 
       .accordion__content {
