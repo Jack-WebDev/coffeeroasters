@@ -1,3 +1,11 @@
+
+main {
+  display: grid;
+  gap: 5rem;
+  width: min(95%, 1400px);
+  margin-inline: auto;
+}
+
 .heroSection {
   display: flex;
   flex-direction: column;

@@ -1,23 +1,34 @@
 .collectionsSection {
-  margin-inline: 1rem;
-  margin-block-start: 5rem; // Remove this & use gap on main
   display: grid;
   justify-items: center;
   gap: 5rem;
+  width: min(95%, 1400px);
+  margin-inline: auto;
+
+  @media screen and (min-width: 768px) {
+    gap: unset;
+  }
 
   h2 {
     color: #83888f;
-    font-size: 2rem;
+    font-size: clamp(2rem, 10vw + 0.5rem, 10rem);
     font-family: var(--ff-france);
     text-transform: capitalize;
 
     @media screen and (min-width: 768px) {
-      font-size: 6.5rem;
+      font-size: clamp(2rem, 14vw + 0.5rem, 13rem);
       text-transform: lowercase;
     }
+  }
 
-    @media screen and (min-width:1024px) {
-      font-size: 8rem;
+  .collections__content {
+    display: grid;
+    gap: 5rem;
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+      align-items: flex-end;
+      gap: 1rem;
     }
   }
 
@@ -34,7 +45,6 @@
       display: flex;
       align-items: start;
       text-align: start;
-      transform: translateY(-80px);
     }
 
     @media screen and (min-width: 1024px) {
@@ -42,17 +52,6 @@
       text-align: center;
       flex-direction: column;
       box-shadow: 0px -100px 100px 10px #fff;
-
-    }
-
-  }
-
-  .collections__content {
-
-    @media screen and (min-width:1024px) {
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      align-items: flex-end;
     }
   }
 
@@ -64,17 +63,17 @@
     align-items: start;
     gap: 2rem;
 
+    h3 {
+      font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+    }
+
     @media screen and (min-width: 768px) {
       transform: translateY(-50px);
     }
-
-
-
   }
 
   .grandEspresso {
     box-shadow: 0px -100px 100px 10px #fff;
-
   }
 
   @media screen and (min-width: 768px) {
@@ -84,19 +83,13 @@
     }
 
     h3 {
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
       font-family: var(--ff-france);
     }
 
     p {
       font-family: var(--ff-barlow);
       font-weight: 700;
-    }
-  }
-
-  @media screen and (min-width: 1024px) {
-    h3 {
-      font-size: 1.9rem;
     }
   }
 }

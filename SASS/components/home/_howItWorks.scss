@@ -1,76 +1,72 @@
-
-
 .howItWorks {
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+  transform: translateY(25rem);
+  padding-inline: 1rem;
+  width: min(95%, 1400px);
+  margin-inline: auto;
+
+  .planCreationProcess {
     display: grid;
     gap: 3rem;
-    justify-items: center;
-    transform: translateY(40rem);
-    padding-inline: 1.5rem;
-
-
-
-    .planCreationProcess {
-        display: grid;
-        gap: 3rem;
-        text-align: center;
-
-        @media screen and (min-width: 768px) {
-            grid-template-columns: repeat(3, 1fr);
-            align-items: flex-start;
-            text-align: start;
-        }
-    }
-
+    text-align: center;
 
     @media screen and (min-width: 768px) {
-        transform: translateY(20rem);
-        justify-items: start;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: flex-start;
+      text-align: start;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(0);
+    justify-items: start;
+  }
+
+  .pickCoffee,
+  .chooseFreq,
+  .receiveCoffee {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+
+    span {
+      font-size: 3rem;
+      font-family: var(--ff-france);
+      color: var(--clr-orange-100);
     }
 
-    .pickCoffee, .chooseFreq, .receiveCoffee {
-        display: grid;
-        justify-items: center;
-        gap: 1rem;
-
-        span {
-            font-size: 3rem;
-            font-family: var(--ff-france);
-            color: var(--clr-orange-100);
-        }
-
-        h3 {
-            font-family: var(--ff-france);
-        }
-
-
-        @media screen and (min-width:768px) {
-            justify-items: start;
-            h3 {
-                font-size: 2rem;
-            }
-            p {
-                font-family: var(--ff-barlow);
-                font-weight: 600;
-            }
-        }
-
+    h3 {
+      font-size: clamp(1.5rem, 3vw + 0.5rem, 2rem);
+      font-family: var(--ff-france);
     }
-    
-    .create-plan__btn {
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        background-color: var(--clr-cyan-900);
+
+    @media screen and (min-width: 768px) {
+      justify-items: start;
+
+      p {
+        font-family: var(--ff-barlow);
         font-weight: 600;
-        cursor: pointer;
-        transition: 300ms ease-in;
-
-    }
-
-    .create-plan__btn:hover {
-        background-color: var( --clr-cyan-900);
-        color: var(--clr-grey-900);
       }
-}
+    }
+  }
 
+  .create-plan__btn {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--clr-cyan-900);
+    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
+    font-family: var(--ff-france);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease-in;
+  }
+
+  .create-plan__btn:hover {
+    background-color: var(--clr-cyan-900);
+    color: var(--clr-grey-900);
+  }
+}

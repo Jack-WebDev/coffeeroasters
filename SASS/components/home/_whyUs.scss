@@ -1,16 +1,26 @@
 
 .whyUs {
-    margin-block-start: 5rem; //Remove & add gap in main
-    margin-inline: 1rem;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     justify-items: center;
     text-align: center;
     background-color: var(--clr-grey-900);
     color: #fff;
-    max-height: 140vh;
+    max-height: 130vh;
     padding: 3rem 1rem;
     border-radius: 10px;
+    width: min(95%, 1400px);
+    margin-inline: auto;
+
+
+    h2 {
+        font-size: clamp(2rem, 3vw + .5rem, 3rem);
+        font-family: var(--ff-france);
+    }
+
+    p {
+        width: min(90%, 600px);
+    }
 
     .cards {
         display: grid;
@@ -18,22 +28,9 @@
 
         @media screen and (min-width: 1024px) {
             grid-template-columns: repeat(3,1fr);
-            transform: translateY(100px);
         }
     }
 
-    @media screen and (min-width: 768px) {
-        max-height: 90vh;
-
-        h2 {
-            font-size: 3rem;
-            font-family: var(--ff-france);
-        }
-
-        p {
-            width: 60ch;
-        }
-    }
 
 
 
@@ -42,32 +39,17 @@
         gap: 1.5rem;
         justify-items: center;
         background-color: var(--clr-cyan-900);
-        padding-inline: 1.5rem;
-        padding-block: 2rem;
+        padding: 1.5em;
         border-radius: 10px;
-
-        img {
-            padding-block-start: 3rem;
-        }
 
 
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            gap: 5rem;
+            gap: 2rem;
             text-align: start;
 
-            img {
-                padding: unset;
-            }
-
-            .bestquality__content, .exclusivebenefits__content, .freeshipping__content {
-                
-                p {
-                    width: 40ch;
-                }
-            }
         }
 
 
@@ -77,12 +59,5 @@
         }
     }
 
-    .bestquality {
-        margin-block-start: 1.5rem;
-
-        @media screen and (min-width:1024px) {
-            margin: auto;
-        }
-    }
 }
 
