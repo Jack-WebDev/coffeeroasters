@@ -1,8 +1,7 @@
 .create__plan {
   display: grid;
   justify-items: center;
-  transform: translateY(10rem);
-  width: max(100% - 3rem);
+  width: min(90%, 1400px);
   margin-inline: auto;
 
   .order__navigation {
@@ -72,11 +71,12 @@
   }
 
   .create-plan__btn {
-    padding: 10px 15px;
+    padding: 0.5em 1em;
     border: none;
     border-radius: 5px;
     color: #fff;
     background-color: var(--clr-cyan-900);
+    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
     font-family: var(--ff-france);
     font-weight: 600;
     cursor: pointer;
@@ -89,12 +89,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: flex-start;
-    transform: translateY(10rem);
-    width: max(100% - 3rem);
-    margin-inline: auto;
 
     .order__navigation {
       display: inline-block;
@@ -166,7 +162,6 @@
   @media screen and (min-width: 1024px) {
     .order__accordion-container {
       .accordion__content {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: inherit;
       }

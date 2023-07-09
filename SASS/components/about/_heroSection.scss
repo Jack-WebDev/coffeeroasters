@@ -1,3 +1,10 @@
+
+main {
+  display: grid;
+  gap: 5rem;
+}
+
+
 .heroSection {
   display: flex;
   flex-direction: column;
@@ -9,10 +16,10 @@
   background-size: 100%;
   background-repeat: no-repeat;
   padding-block: 2rem;
-  margin-inline: auto;
-  border-radius: 10px;
+  // margin-inline: auto;
+  // border-radius: 10px;
   aspect-ratio: 2.2;
-  width: min(95%, 1400px);
+  // width: min(95%, 1400px);
 
   h1 {
     font-size: clamp(2rem, 5vw + 0.5rem, 7rem);

@@ -1,8 +1,6 @@
 .quality {
   display: grid;
-  width: max(100% - 2rem);
-  margin-inline: auto;
-  transform: translateY(10rem);
+  // width: 100%;
   gap: 2rem;
 
   .tablet-img {
@@ -17,6 +15,17 @@
     display: grid;
     justify-items: center;
     text-align: center;
+    gap: 2rem;
+
+    h2 {
+      font-size: clamp(2rem, 3vw + .5rem, 3rem);
+      line-height: 1;
+    }
+
+    p {
+      font-size: clamp(1.2rem, 1vw + .5rem, 2rem);
+      padding-inline: 1.5rem;
+    }
   }
 
 
@@ -31,12 +40,12 @@
       display: inline-block;
     }
 
-
-
   }
 
 
   @media screen and (min-width: 1024px) {
+    width: max(100% - 5rem);
+    margin-inline: auto;
     display: flex;
     flex-direction: row-reverse;
     
@@ -54,6 +63,11 @@
       justify-items: end;
       text-align: end;
       align-content: center;
+
+      p {
+        padding-inline: unset;
+        padding-inline-start: 2rem;
+      }
     }
   }
 }
