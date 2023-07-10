@@ -16,7 +16,7 @@
     text-transform: capitalize;
 
     @media screen and (min-width: 768px) {
-      font-size: clamp(2rem, 14vw + 0.5rem, 13rem);
+      font-size: clamp(2rem, 14vw + 0.5rem, 11rem);
       text-transform: lowercase;
     }
   }
