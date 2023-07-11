@@ -24,11 +24,14 @@ footer {
     }
 
     .nav__link {
-      color: var(--clr-grey-400);
+      color: rgba(#fff, 0.7);
+      font-family: var(--ff-barlow);
       text-decoration: none;
     }
 
     .nav__link:hover {
+      color: #fff;
+      font-weight: 600;
       text-decoration: 2px solid underline var(--clr-cyan-900);
     }
   }

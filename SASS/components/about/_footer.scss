@@ -9,7 +9,7 @@ footer {
     gap: 3rem;
 
     @media screen and (min-width: 1024px) {
-        grid-auto-flow: column;
+      grid-auto-flow: column;
     }
   }
 
@@ -19,18 +19,19 @@ footer {
     gap: 2rem;
     list-style: none;
 
-    @media screen and (min-width:1024px) {
-        width: min(90%, 1400px);
-        margin-inline: auto;
-        grid-auto-flow: column;
+    @media screen and (min-width: 1024px) {
+      grid-auto-flow: column;
     }
 
     .nav__link {
-      color: var(--clr-grey-400);
+      color: rgba(#fff, 0.7);
+      font-family: var(--ff-barlow);
       text-decoration: none;
     }
 
     .nav__link:hover {
+      color: #fff;
+      font-weight: 600;
       text-decoration: 2px solid underline var(--clr-cyan-900);
     }
   }
