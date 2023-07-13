@@ -24,10 +24,60 @@
       gap: 1.5rem;
     }
 
+    .accordion__control.active {
+      
+      .accordion__content {
+        display: grid;
+      }
+
+      
+      .fa-chevron-up {
+        opacity: 1;
+      }
+
+      .fa-chevron-down {
+        opacity: 0;
+      }
+  
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-size: clamp(1rem, 2vw + .5rem, 2.5rem);
+      }
+
+      .fa-chevron-down,.fa-chevron-up {
+        transition: opacity 100ms ease-in;
+        color: var(--clr-cyan-900);
+      }
+
+      .fa-chevron-up {
+        opacity: 0;
+        transform: translateX(16px);
+      }
+
+      .fa-chevron-down {
+        opacity: 1;
+      }
+
+      .fa-chevron-up.active {
+        opacity: 1;
+      }
+
+      .fa-chevron-down.active {
+        opacity: 0;
+      }
+    }
+
     .accordion__content {
-      display: grid;
+      display: none;
       gap: 2rem;
     }
+
 
     .coffee__option {
       display: grid;

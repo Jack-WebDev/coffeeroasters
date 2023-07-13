@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200;1,500&family=Fraunces:ital,wght@1,600;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/createPlan.css">
+    <script src="https://kit.fontawesome.com/53f1cddc49.js" crossorigin="anonymous"></script>
     <script defer src="JS/header.js"></script>
     <script defer src="JS/createPlan.js"></script>
     <title>Create Plan</title>
@@ -97,7 +98,11 @@
 
                 <div class="order__accordion-container">
                     <div class="accordion__control">
-                        <h3>How do you drink your coffee?</h3>
+                        <div class="heading">
+                            <h3>How do you drink your coffee?</h3>
+                            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
 
                         <div class="accordion__content" id="content1">
                             <div class="coffee__option">
@@ -119,7 +124,11 @@
                     </div>
 
                     <div class="accordion__control">
-                        <h3>What type of coffee?</h3>
+                        <div class="heading">
+                            <h3>What type of coffee?</h3>
+                            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
 
                         <div class="accordion__content" id="content2">
                             <div class="coffee__option">
@@ -141,7 +150,11 @@
                     </div>
 
                     <div class="accordion__control">
-                        <h3>How much would you like?</h3>
+                        <div class="heading">
+                            <h3>How much would you like?</h3>
+                            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
 
                         <div class="accordion__content" id="content3">
                             <div class="coffee__option">
@@ -162,8 +175,12 @@
                         </div>
                     </div>
 
-                    <div class="accordion__control">
-                        <h3>Want us to grind them?</h3>
+                    <div class="accordion__control grind">
+                        <div class="heading">
+                            <h3>Want us to grind them?</h3>
+                            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
 
                         <div class="accordion__content" id="content4">
                             <div class="coffee__option">
@@ -185,7 +202,11 @@
                     </div>
 
                     <div class="accordion__control">
-                        <h3>How often should we deliver</h3>
+                        <div class="heading">
+                            <h3>How often should we deliver</h3>
+                            <i class="fa-sharp fa-solid fa-chevron-up"></i>
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
 
                         <div class="accordion__content" id="content5">
                             <div class="coffee__option">
@@ -211,7 +232,7 @@
                     <h5>ORDER SUMMARY</h5>
 
                     <p>
-                        "I drink my coffee <span id="option1">___</span>, with a <span id="option2">___</span> type of bean. <span id="option3">___</span> ground ala <span id="option4">___</span>, sent to me <span id="option5">___</span>."
+                        "I drink my coffee <span class="option1-1" style="color: #fff;"></span><span id="option1">___</span>, with a <span id="option2">___</span> type of bean. <span id="option3">___</span><span class="option4-1" style="color: #fff;">ground ala</span> <span id="option4">___</span>, sent to me <span id="option5">___</span>."
                     </p>
                 </div>
 
