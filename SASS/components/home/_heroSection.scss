@@ -13,7 +13,7 @@ main {
   text-align: center;
   gap: 1.5rem;
   color: #fff;
-  background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
+  background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   padding-block: 2rem;
@@ -57,11 +57,11 @@ main {
     justify-content: center;
     align-items: start;
     text-align: start;
-    background-image: url(/assets/home/tablet/image-hero-coffeepress.jpg);
+    background-image: url(../assets/home/tablet/image-hero-coffeepress.jpg);
     padding-inline-start: 2rem;
   }
 
   @media screen and (min-width: 1024px) {
-    background-image: url(/assets/home/desktop/image-hero-coffeepress.jpg);
+    background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
   }
 }

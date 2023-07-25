@@ -12,7 +12,7 @@ main {
   text-align: center;
   gap: 1.5rem;
   color: #fff;
-  background-image: url(/assets/about/mobile/image-hero-whitecup.jpg);
+  background-image: url(../assets/about/mobile/image-hero-whitecup.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   padding-block: 2rem;
@@ -40,11 +40,11 @@ main {
     text-align: start;
     padding-block: unset;
     padding-inline-start: 2rem;
-    background-image: url(/assets/about/tablet/image-hero-whitecup.jpg);
+    background-image: url(../assets/about/tablet/image-hero-whitecup.jpg);
   }
 
   @media screen and (min-width: 1024px) {
-    background-image: url(/assets/about/desktop/image-hero-whitecup.jpg);
+    background-image: url(../assets/about/desktop/image-hero-whitecup.jpg);
     aspect-ratio: 3;
   }
 }
