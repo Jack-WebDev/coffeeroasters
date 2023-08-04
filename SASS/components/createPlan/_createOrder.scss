@@ -22,6 +22,10 @@
       justify-items: center;
       text-align: center;
       gap: 1.5rem;
+
+      .fa-chevron-up {
+        transform: rotate(180deg) translateX(-16px);
+      }
     }
 
     .accordion__control.active {
@@ -32,11 +36,7 @@
 
       
       .fa-chevron-up {
-        opacity: 1;
-      }
-
-      .fa-chevron-down {
-        opacity: 0;
+        transform: rotate(0deg) translateX(16px);
       }
   
     }
@@ -50,26 +50,9 @@
         font-size: clamp(1rem, 2vw + .5rem, 2.5rem);
       }
 
-      .fa-chevron-down,.fa-chevron-up {
+      .fa-chevron-up {
         transition: opacity 100ms ease-in;
         color: var(--clr-cyan-900);
-      }
-
-      .fa-chevron-up {
-        opacity: 0;
-        transform: translateX(16px);
-      }
-
-      .fa-chevron-down {
-        opacity: 1;
-      }
-
-      .fa-chevron-up.active {
-        opacity: 1;
-      }
-
-      .fa-chevron-down.active {
-        opacity: 0;
       }
     }
 
