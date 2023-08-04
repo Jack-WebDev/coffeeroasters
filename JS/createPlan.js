@@ -59,14 +59,32 @@ function handleChoices(e) {
 
 
     let orderSummary = 
-    `"I drink my coffee ${question1 === "Capsules" ? "using" : "as"} 
+    `"I drink my coffee ${question1 === "Capsule" ? "using" : "as"} 
         <span>${question1}</span>, 
-        with a <span>${question2}</span> type bean. 
+        with a <span>${question2}</span> ${grindOption()} type bean. 
         <span>${question3}</span>sent to me 
         <span>${question5}</span>."
     `
 
-    // console.log(question1)
+    // console.log(question3)
 
     document.querySelector('[data-order]').innerHTML = orderSummary;
 }
+
+
+// function capsuleOption() {
+//     if(question1 === "")
+// }
+
+
+function grindOption() {
+    if(question1 === "Capsule") {
+        console.log(question1)
+        return ''
+    }
+    else {
+        return `ground ala <span id="question4">${question4}</span>`
+    }
+}
+
+
