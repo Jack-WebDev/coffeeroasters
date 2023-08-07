@@ -7,10 +7,24 @@ let question5 = "___";
 let weeklyPrice = 0.0;
 let biweeklyPrice = 0.0;
 let monthlyPrice = 0.0;
+let totalPrice = 0.0;
+
+
+const weeklyPrices = document.querySelector('.price__week')
+const biweeklyPrices = document.querySelector('.price__biWeek')
+const monthlyPrices = document.querySelector('.price__month')
+const createBtn = document.querySelector('.create-plan--btn')
+
+const totalFee = document.getElementById('totalFee')
+
 
 const choices = document.querySelectorAll("[data-option]");
 const items = document.querySelectorAll("[data-item]");
 const questions = document.querySelectorAll("[data-question]");
+
+createBtn.addEventListener('click', createPlanBtn);
+// console.log(createBtn)
+
 
 questions.forEach((question) => {
   question.addEventListener("click", handleQuestion);
@@ -60,7 +74,7 @@ function handleChoices(e) {
     question1 === "Capsule" ? "using" : "as"
   } 
         <span>${question1}</span>, 
-        with a <span>${question2}</span> ${grindOption()} type bean. 
+        with a <span>${question2} </span> ${grindOption()} type bean. 
         <span>${question3}</span>sent to me 
         <span>${question5}</span>."
     `;
@@ -68,6 +82,9 @@ function handleChoices(e) {
   // console.log(question3)
   capsuleOption();
   document.querySelector("[data-order]").innerHTML = orderSummary;
+  document.querySelector('.finalOrder__details').innerHTML = orderSummary
+  prices()
+  // createPlanBtn()
 }
 
 function capsuleOption() {
@@ -83,7 +100,6 @@ function capsuleOption() {
 
 function grindOption() {
   if (question1 === "Capsule") {
-    console.log(question1);
     return "";
   } else {
     return `ground ala <span id="question4">${question4}</span>`;
@@ -97,27 +113,51 @@ function prices() {
       biweeklyPrice = 9.6;
       monthlyPrice = 12.0;
       break;
-    case "500":
-      weeklyPrice = 7.2;
-      biweeklyPrice = 9.6;
-      monthlyPrice = 12.0;
+    case "500g":
+      weeklyPrice = 13.00;
+      biweeklyPrice = 17.50;
+      monthlyPrice = 22.00;
       break;
     case "1000g":
-      weeklyPrice = 7.2;
-      biweeklyPrice = 9.6;
-      monthlyPrice = 12.0;
+      weeklyPrice = 22.00;
+      biweeklyPrice = 32.00;
+      monthlyPrice = 42.00;
       break;
     default:
       break;
   }
+
+  weeklyPrices.innerText = `R${weeklyPrice.toFixed(2)} per shipment. Includes free first-class shipping.`
+  biweeklyPrices.innerText = `R${biweeklyPrice.toFixed(2)} per shipment. Includes free first-class shipping.`
+  monthlyPrices.innerText = `R${monthlyPrice.toFixed(2)} per shipment. Includes free first-class shipping.`
 }
 
 function calcPrice() {
-  if (question5 === "weekly") {
-    totalPrice = weeklyPrice * 4;
-  } else if (question5 === "biweekly") {
-    totalPrice = biweeklyPrice * 2;
-  } else {
-    totalPrice = monthlyPrice * 1;
+
+  switch (question5) {
+    case "Every week":
+      totalPrice = weeklyPrice * 4
+      break;
+    case "Every 2 weeks":
+      totalPrice = biweeklyPrice * 2
+      break;
+    case "Every month":
+      totalPrice = monthlyPrice * 1
+      break;
+    default:
+      break;
   }
+
+  totalFee.innerText = `Your total payment: ${totalPrice.toFixed(2)}.`
+}
+
+function createPlanBtn() {
+  console.log(".....")
+
+  document.getElementById("order").style.opacity = "1";
+
+  // document.querySelector('.order__summary').style.opacity = "1";
+
+  calcPrice()
+
 }

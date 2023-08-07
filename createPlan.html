@@ -36,7 +36,7 @@
 
             <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
 
-            <button class="create-plan__btn">Create your plan</button>
+            <button class="create-order-plan__btn">Create your plan</button>
         </section>
 
         <section class="howItWorks">
@@ -206,17 +206,17 @@
                         <div class="accordion__content">
                             <div class="coffee__option" data-item="5" data-option="Every week">
                                 <h4>Every week</h4>
-                                <p>$7.20 per shipment. Includes free first-class shipping.</p>
+                                <p class="price__week">$7.20 per shipment. Includes free first-class shipping.</p>
                             </div>
 
                             <div class="coffee__option" data-item="5" data-option="Every 2 weeks">
                                 <h4>Every 2 weeks</h4>
-                                <p>>$9.60 per shipment. Includes free priority shipping.</p>
+                                <p class="price__biWeek">$9.60 per shipment. Includes free priority shipping.</p>
                             </div>
 
                             <div class="coffee__option" data-item="5" data-option="Every month">
                                 <h4>Every month</h4>
-                                <p>$12.00 per shipment. Includes free priority shipping.</p>
+                                <p class="price__month">$12.00 per shipment. Includes free priority shipping.</p>
                             </div>
 
                         </div>
@@ -230,22 +230,17 @@
                         "I drink my coffee <span id="question1">__</span>, with a <span id="question2">__</span> type of bean. <span id="question3">__</span>, sent to me <span id="question5">__</span>."
                     </p>
 
-                    <p data-price="price">0.00</p>
                 </div>
-
-                <!-- <div class="order__summary" id="order">
+                
+                <div class="order__summary" id="order" style="opacity: 0;">
                     <h5>ORDER SUMMARY</h5>
-
-                    <p>
-                        "I drink my coffee as <span id="option1">___</span>, with a <span id="option2">___</span> type of bean. <span id="option3">___</span> ground ala <span id="option4">___</span>, sent to me <span id="option5">___</span>."
-                    </p>
-
-                    <div class="total__payment">
-                        <span>R300</span>
-                    </div>
-                </div> -->
-                <!-- <button disabled id="disabled">Create Plan</button> -->
-                <button class="create-plan__btn" >Create my plan!</button>
+                    
+                    <p class="finalOrder__details"></p>
+                    
+                    <p data-price="price" id="totalFee">0.00</p>
+                    <!-- <div class="total__payment">___</div> -->
+                </div>
+                <button class="create-plan--btn" >Create my plan!</button>
         </div>
 
 
