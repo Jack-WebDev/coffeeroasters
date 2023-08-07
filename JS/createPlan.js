@@ -10,6 +10,20 @@ let monthlyPrice = 0.0;
 let totalPrice = 0.0;
 
 
+const modal = document.querySelector("#modal");
+// const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close_modal");
+// console.log(closeModal)
+// openModal.addEventListener("click", () => {
+//   modal.showModal();
+// });
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
+
+
+
 const weeklyPrices = document.querySelector('.price__week')
 const biweeklyPrices = document.querySelector('.price__biWeek')
 const monthlyPrices = document.querySelector('.price__month')
@@ -148,15 +162,11 @@ function calcPrice() {
       break;
   }
 
-  totalFee.innerText = `Your total payment: ${totalPrice.toFixed(2)}.`
+  totalFee.innerText = `Your total payment: ${totalPrice.toFixed(2)} / mo.`
 }
 
 function createPlanBtn() {
-  console.log(".....")
-
-  document.getElementById("order").style.opacity = "1";
-
-  // document.querySelector('.order__summary').style.opacity = "1";
+  modal.show()
 
   calcPrice()
 

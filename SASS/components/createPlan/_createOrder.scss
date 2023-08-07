@@ -11,6 +11,8 @@
   .order__creation-container {
     display: grid;
     gap: 3rem;
+
+
   }
 
   .order__accordion-container {
@@ -102,6 +104,7 @@
       color: var(--clr-cyan-900);
     }
   }
+
 
   .create-plan__btn {
     padding: 0.5em 1em;
@@ -204,5 +207,31 @@
       display: grid;
       justify-self: flex-end;
     }
+  }
+}
+
+
+dialog {
+  width: 100ch;
+  text-align: center;
+  padding: 5rem;
+  margin: auto;
+}
+
+dialog::backdrop {
+  background: green;
+}
+
+@supports not selector(::backdrop) {
+
+  body::before {    
+    box-sizing: border-box;
+    content: "⚠️ Your browser doesn't support ::backdrop";
+    display: block;
+    max-width: 72rem;
+    margin: auto;
+    color: #f44336;
+    font-weight: bold;
+    padding: 2rem 2rem 0;
   }
 }
