@@ -11,12 +11,13 @@ let totalPrice = 0.0;
 
 
 const modal = document.querySelector("#modal");
-// const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close_modal");
+const openModal = document.querySelector(".open__modal");
+const closeModal = document.querySelector(".close__modal");
 // console.log(closeModal)
-// openModal.addEventListener("click", () => {
-//   modal.showModal();
-// });
+openModal.addEventListener("click", () => {
+  modal.showModal();
+  calcPrice()
+});
 
 closeModal.addEventListener("click", () => {
   modal.close();
@@ -27,7 +28,7 @@ closeModal.addEventListener("click", () => {
 const weeklyPrices = document.querySelector('.price__week')
 const biweeklyPrices = document.querySelector('.price__biWeek')
 const monthlyPrices = document.querySelector('.price__month')
-const createBtn = document.querySelector('.create-plan--btn')
+// const createBtn = document.querySelector('.create-plan--btn')
 
 const totalFee = document.getElementById('totalFee')
 
@@ -36,7 +37,7 @@ const choices = document.querySelectorAll("[data-option]");
 const items = document.querySelectorAll("[data-item]");
 const questions = document.querySelectorAll("[data-question]");
 
-createBtn.addEventListener('click', createPlanBtn);
+// createBtn.addEventListener('click', createPlanBtn);
 // console.log(createBtn)
 
 
@@ -165,9 +166,9 @@ function calcPrice() {
   totalFee.innerText = `Your total payment: ${totalPrice.toFixed(2)} / mo.`
 }
 
-function createPlanBtn() {
-  modal.show()
+// function createPlanBtn() {
+//   modal.show()
 
-  calcPrice()
+//   calcPrice()
 
-}
+// }

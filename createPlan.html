@@ -36,7 +36,7 @@
 
             <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
 
-            <button class="create-order-plan__btn">Create your plan</button>
+            <button class="create-plan__btn">Create your plan</button>
         </section>
 
         <section class="howItWorks">
@@ -231,16 +231,8 @@
                     </p>
 
                 </div>
-                
-                <dialog class="modal" id="modal">
-                        <h5>ORDER SUMMARY</h5>
-                        <p class="finalOrder__details"></p>
-                        <p data-price="price" id="totalFee">0.00</p>
 
-                        <button class="close_modal">Close Summary</button>
-                </dialog>
-
-                <button class="create-plan--btn" >Create my plan!</button>
+                <button class="create-plan__btn open__modal">Create my plan!</button>
         </div>
 
 
@@ -267,6 +259,12 @@
             </div>
         </nav>
     </footer>
-    
+    <dialog class="modal" id="modal">
+        <h5>ORDER SUMMARY</h5>
+        <p class="finalOrder__details"></p>
+        <p data-price="price" id="totalFee">0.00</p>
+
+        <button class="close__modal">Close Summary</button>
+</dialog>
 </body>
 </html>
