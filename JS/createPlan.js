@@ -32,7 +32,6 @@ const items = document.querySelectorAll("[data-item]");
 const questions = document.querySelectorAll("[data-question]");
 
 questions.forEach((question) => {
-  // question.addEventListener("click", handleQuestion);
   question.addEventListener("click", toggleOption);
 });
 
@@ -41,14 +40,15 @@ choices.forEach((choice) => {
 });
 
 function toggleOption(e) {
-  const option = e.currentTarget;
-  option.classList.toggle("active");
+  const question = e.currentTarget;
+  choices.forEach((choice) => {
+    if (question === Number(choice.dataset.item)) {
+      choice.classList.toggle("active");
+    }
+  });
+  question.classList.add("active");
 }
 
-function handleQuestion(e) {
-  const question = Number(e.currentTarget.dataset.question);
-  question.classList.toggle("active");
-}
 
 function handleChoices(e) {
   const currentItem = Number(e.currentTarget.dataset.item);
@@ -75,23 +75,23 @@ function handleChoices(e) {
       break;
   }
 
-  // choices.forEach((choice) => {
-  //   if (currentItem === Number(choice.dataset.item)) {
-  //     console.log(choice)
-  //     choice.classList.remove("card-active");
-  //     choice.classList.add("card-hover");
-  //   }
-  // });
+  choices.forEach((choice) => {
+    if (currentItem === Number(choice.dataset.item)) {
+      choice.classList.remove("active");
+    }
+  });
   coffeeOption.classList.toggle("active");
 
   let orderSummary = `"I drink my coffee ${
     question1 === "Capsules" ? "using" : "as"
   } 
-        <span>${question1}</span>, 
-        with a <span>${question2} </span> ${grindOption()} type bean. 
-        <span>${question3}</span> sent to me 
-        <span>${question5}</span>."
+        <span style="color:#0e8784; font-weight:900;">${question1}</span>, 
+        with a <span style="color:#0e8784;font-weight:900;">${question2} </span> ${grindOption()} type bean. 
+        <span style="color:#0e8784;font-weight:900;">${question3}</span> sent to me 
+        <span style="color:#0e8784;font-weight:900;">${question5}</span>."
     `;
+
+    
 
   capsuleOption();
   document.querySelector("[data-order]").innerHTML = orderSummary;
@@ -113,7 +113,7 @@ function grindOption() {
   if (question1 === "Capsules") {
     return "";
   } else {
-    return `ground ala <span id="question4">${question4}</span>`;
+    return `ground ala <span id="question4" style="color:#0e8784;font-weight:900;">${question4}</span>`;
   }
 }
 
