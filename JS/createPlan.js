@@ -47,8 +47,8 @@ function toggleOption(e) {
     }
   });
   question.classList.add("active");
-}
 
+}
 
 function handleChoices(e) {
   const currentItem = Number(e.currentTarget.dataset.item);
@@ -90,8 +90,6 @@ function handleChoices(e) {
         <span style="color:#0e8784;font-weight:900;">${question3}</span> sent to me 
         <span style="color:#0e8784;font-weight:900;">${question5}</span>."
     `;
-
-    
 
   capsuleOption();
   document.querySelector("[data-order]").innerHTML = orderSummary;
